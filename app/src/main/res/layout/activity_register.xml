@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="UserID" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="10dp"
+        android:padding="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            android:layout_centerVertical="true"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/blackBG"
+            app:civ_circle_background_color="@color/whiteBG"
+            android:layout_centerHorizontal="true"  />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardViewLoginVeriables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_margin="0dp"
+        card_view:cardBackgroundColor="@color/whiteBG"
+        android:layout_centerHorizontal="true"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="4dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.0"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        card_view:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center">
+
+
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="email"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/etUserName"
+                android:hint="password"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/etNameSurname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/etPassword"
+                android:hint="nameSurname"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/etNameSurname"
+                android:hint="age"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/etAge"
+                android:hint="city"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_green_rec"
+        android:clickable="true"
+        android:text="REGISTER"
+        android:textColor="@color/whiteBG"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

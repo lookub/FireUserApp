@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_gravity="center_horizontal"  >
+
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        card_view:contentPadding="2dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardBackgroundColor="@color/greenA400"
+        android:id="@+id/cardView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgV_warning"
+                android:src="@drawable/warning_yellow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_centerVertical="true"   />
+
+            <TextView
+                android:id="@+id/tV_toast_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Android Tutorial Custom Toast"
+                android:textColor="@color/blackBG"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/imgV_warning"
+                android:layout_toEndOf="@+id/imgV_warning"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
